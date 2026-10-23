@@ -258,7 +258,7 @@
 
     <!-- Logic Application Script -->
     <script>
-        const apiKey = "AQ.Ab8RN6lXCI6b8VUFwXXAb--LEfu2RDUr3FKmn_MnqkRvHTLXog"; // 填入您的 Gemini API Key
+        const apiKey = "AQ.Ab8RN6IXCI6b8VUFwxXAb--LEFu2RDUr3FKmn_MnqkRvHTLXog"; // 已填入您指定的金鑰
         const chatWindow = document.getElementById('chatWindow');
         const userInput = document.getElementById('userInput');
         const sendBtn = document.getElementById('sendBtn');
@@ -343,7 +343,7 @@
 
         // Call Gemini API with Google Search Grounding
         async function fetchAIResponse(userQuery) {
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }],
